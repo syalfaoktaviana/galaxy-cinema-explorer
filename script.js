@@ -1,10 +1,5 @@
 const API_KEY = '59c0c373'; 
 
-window.onload = () => {
-    document.getElementById('searchInput').value = 'Avengers'; 
-    searchMovies();
-};
-
 function handleKeyPress(event) {
     if (event.key === "Enter") {
         searchMovies();
