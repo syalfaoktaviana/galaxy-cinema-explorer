@@ -1,0 +1,128 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #050510;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Container Pencarian - Dibuat sangat bulat */
+.search-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 100px; /* Sangat bulat */
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    outline: none;
+}
+
+/* Style Dropdown */
+.filter-select {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select option {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+/* Tombol Cari - Sangat Bulat */
+.btn-search {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 100px; /* Sangat bulat */
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-search:hover {
+    box-shadow: 0 0 20px rgba(142, 45, 226, 0.6);
+    transform: scale(1.05);
+}
+
+/* Kartu Film - Lebih Rounded */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px; /* Lebih melengkung */
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #8e2de2;
+}
+
+.poster-img {
+    height: 380px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0; /* Mengikuti lengkungan kartu */
+}
+
+/* Tombol Lihat Detail - Pil Style */
+.btn-detail {
+    background: transparent;
+    border: 2px solid #8e2de2;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 100px; /* Bentuk Pil */
+    font-weight: 500;
+    transition: 0.3s;
+    outline: none;
+    border-style: solid;
+}
+
+.btn-detail:hover {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px rgba(142, 45, 226, 0.5);
+}
+
+/* Modal Galaxy - Lebih Rounded */
+.galaxy-modal {
+    background: #0f0f1e;
+    border: 1px solid #8e2de2;
+    border-radius: 40px; /* Sangat bulat */
+}
+
+.rounded-img {
+    border-radius: 25px; /* Gambar di dalam modal juga bulat */
+}
+
+.badge-galaxy {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 100px; /* Sangat bulat/pill */
+    font-weight: 500;
+    font-size: 0.8rem;
+    border: none;
+    display: inline-block;
+}
