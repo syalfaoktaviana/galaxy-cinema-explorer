@@ -62,7 +62,6 @@ async function showDetail(id) {
     const movie = await response.json();
 
     modalTitle.innerText = movie.Title;
-    // Ganti bagian modalBody.innerHTML di script.js kamu menjadi seperti ini:
     modalBody.innerHTML = `
     <div class="row align-items-center">
         <div class="col-md-5 mb-3 text-center">
